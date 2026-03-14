@@ -1,0 +1,3785 @@
+[
+  {
+    "node_type": "ShaderNodeAddShader",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Shader",
+        "type": "SHADER",
+        "default_value": null
+      },
+      {
+        "name": "Shader",
+        "type": "SHADER",
+        "default_value": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Shader",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeAmbientOcclusion",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Distance",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "AO",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeAttribute",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBackground",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Background",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBevel",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Radius",
+        "type": "VALUE",
+        "default_value": 0.05000000074505806
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBlackbody",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Temperature",
+        "type": "VALUE",
+        "default_value": 6500.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBrightContrast",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Brightness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Contrast",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfAnisotropic",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Rotation",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Tangent",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfDiffuse",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfGlass",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.5
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film Thickness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film IOR",
+        "type": "VALUE",
+        "default_value": 1.3300000429153442
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfHair",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Offset",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "RoughnessU",
+        "type": "VALUE",
+        "default_value": 0.10000000149011612
+      },
+      {
+        "name": "RoughnessV",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Tangent",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfHairPrincipled",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.01751299947500229,
+          0.005762999877333641,
+          0.002059000078588724,
+          1.0
+        ]
+      },
+      {
+        "name": "Melanin",
+        "type": "VALUE",
+        "default_value": 0.800000011920929
+      },
+      {
+        "name": "Melanin Redness",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Tint",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Absorption Coefficient",
+        "type": "VECTOR",
+        "default_value": [
+          0.24553099274635315,
+          0.5199999809265137,
+          1.3650000095367432
+        ]
+      },
+      {
+        "name": "Aspect Ratio",
+        "type": "VALUE",
+        "default_value": 0.8500000238418579
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.30000001192092896
+      },
+      {
+        "name": "Radial Roughness",
+        "type": "VALUE",
+        "default_value": 0.30000001192092896
+      },
+      {
+        "name": "Coat",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.5499999523162842
+      },
+      {
+        "name": "Offset",
+        "type": "VALUE",
+        "default_value": 0.03490658476948738
+      },
+      {
+        "name": "Random Color",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Random Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Random",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Reflection",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Transmission",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Secondary Reflection",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfMetallic",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Base Color",
+        "type": "RGBA",
+        "default_value": [
+          0.6169999837875366,
+          0.5770000219345093,
+          0.5400000214576721,
+          1.0
+        ]
+      },
+      {
+        "name": "Edge Tint",
+        "type": "RGBA",
+        "default_value": [
+          0.6949999928474426,
+          0.7260000109672546,
+          0.7699999809265137,
+          1.0
+        ]
+      },
+      {
+        "name": "IOR",
+        "type": "VECTOR",
+        "default_value": [
+          2.756999969482422,
+          2.513000011444092,
+          2.2309999465942383
+        ]
+      },
+      {
+        "name": "Extinction",
+        "type": "VECTOR",
+        "default_value": [
+          3.867000102996826,
+          3.4040000438690186,
+          3.009000062942505
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Rotation",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Tangent",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film Thickness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film IOR",
+        "type": "VALUE",
+        "default_value": 1.3300000429153442
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfPrincipled",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Base Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Metallic",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.5
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Diffuse Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Subsurface Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Subsurface Radius",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ]
+      },
+      {
+        "name": "Subsurface Scale",
+        "type": "VALUE",
+        "default_value": 0.05000000074505806
+      },
+      {
+        "name": "Subsurface IOR",
+        "type": "VALUE",
+        "default_value": 1.399999976158142
+      },
+      {
+        "name": "Subsurface Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Specular IOR Level",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Specular Tint",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Anisotropic",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Anisotropic Rotation",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Tangent",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Transmission Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Coat Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Coat Roughness",
+        "type": "VALUE",
+        "default_value": 0.029999999329447746
+      },
+      {
+        "name": "Coat IOR",
+        "type": "VALUE",
+        "default_value": 1.5
+      },
+      {
+        "name": "Coat Tint",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Coat Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Sheen Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Sheen Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Sheen Tint",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Emission Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Emission Strength",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film Thickness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Thin Film IOR",
+        "type": "VALUE",
+        "default_value": 1.3300000429153442
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfRayPortal",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Position",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Direction",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfRefraction",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.4500000476837158
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfSheen",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfToon",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Size",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Smooth",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfTranslucent",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBsdfTransparent",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeBump",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Distance",
+        "type": "VALUE",
+        "default_value": 0.0010000000474974513
+      },
+      {
+        "name": "Filter Width",
+        "type": "VALUE",
+        "default_value": 0.10000000149011612
+      },
+      {
+        "name": "Height",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeCameraData",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "View Vector",
+        "type": "VECTOR"
+      },
+      {
+        "name": "View Z Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "View Distance",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeClamp",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Min",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Max",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Result",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeCombineColor",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Red",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Green",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Blue",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeCombineXYZ",
+    "label": "",
+    "inputs": [
+      {
+        "name": "X",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Y",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Z",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeDisplacement",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Height",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Midlevel",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 0.009999999776482582
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Displacement",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeEeveeSpecular",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Base Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Specular",
+        "type": "RGBA",
+        "default_value": [
+          0.029999999329447746,
+          0.029999999329447746,
+          0.029999999329447746,
+          1.0
+        ]
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.20000000298023224
+      },
+      {
+        "name": "Emissive Color",
+        "type": "RGBA",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Transparency",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Clear Coat",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Clear Coat Roughness",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Clear Coat Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeEmission",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Emission",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeFloatCurve",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeFresnel",
+    "label": "",
+    "inputs": [
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.5
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeGamma",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Gamma",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeGroup",
+    "label": "",
+    "inputs": [],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeHairInfo",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Is Strand",
+        "type": "VALUE"
+      },
+      {
+        "name": "Intercept",
+        "type": "VALUE"
+      },
+      {
+        "name": "Length",
+        "type": "VALUE"
+      },
+      {
+        "name": "Thickness",
+        "type": "VALUE"
+      },
+      {
+        "name": "Tangent Normal",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Random",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeHoldout",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Holdout",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeHueSaturation",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Hue",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Saturation",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeInvert",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeLayerWeight",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Blend",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Fresnel",
+        "type": "VALUE"
+      },
+      {
+        "name": "Facing",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeLightFalloff",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 100.0
+      },
+      {
+        "name": "Smooth",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Quadratic",
+        "type": "VALUE"
+      },
+      {
+        "name": "Linear",
+        "type": "VALUE"
+      },
+      {
+        "name": "Constant",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeLightPath",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Is Camera Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Shadow Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Diffuse Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Glossy Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Singular Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Reflection Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Transmission Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Is Volume Scatter Ray",
+        "type": "VALUE"
+      },
+      {
+        "name": "Ray Length",
+        "type": "VALUE"
+      },
+      {
+        "name": "Ray Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "Diffuse Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "Glossy Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "Transparent Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "Transmission Depth",
+        "type": "VALUE"
+      },
+      {
+        "name": "Portal Depth",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMapRange",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "From Min",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "From Max",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "To Min",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "To Max",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Steps",
+        "type": "VALUE",
+        "default_value": 4.0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "From Min",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "From Max",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "To Min",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "To Max",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Steps",
+        "type": "VECTOR",
+        "default_value": [
+          4.0,
+          4.0,
+          4.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Result",
+        "type": "VALUE"
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMapping",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Location",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Rotation",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMath",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 0.5
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMix",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Factor",
+        "type": "VECTOR",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "name": "A",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "B",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "A",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "B",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "A",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "name": "B",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "name": "A",
+        "type": "ROTATION",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "B",
+        "type": "ROTATION",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Result",
+        "type": "VALUE"
+      },
+      {
+        "name": "Result",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Result",
+        "type": "RGBA"
+      },
+      {
+        "name": "Result",
+        "type": "ROTATION"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMixRGB",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Color1",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "name": "Color2",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeMixShader",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Shader",
+        "type": "SHADER",
+        "default_value": null
+      },
+      {
+        "name": "Shader",
+        "type": "SHADER",
+        "default_value": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Shader",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeNewGeometry",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Position",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Tangent",
+        "type": "VECTOR"
+      },
+      {
+        "name": "True Normal",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Incoming",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Parametric",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Backfacing",
+        "type": "VALUE"
+      },
+      {
+        "name": "Pointiness",
+        "type": "VALUE"
+      },
+      {
+        "name": "Random Per Island",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeNormal",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Dot",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeNormalMap",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeObjectInfo",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Location",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      },
+      {
+        "name": "Object Index",
+        "type": "VALUE"
+      },
+      {
+        "name": "Material Index",
+        "type": "VALUE"
+      },
+      {
+        "name": "Random",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeOutputAOV",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeOutputLight",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Surface",
+        "type": "SHADER",
+        "default_value": null
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeOutputLineStyle",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Color Fac",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Alpha Fac",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeOutputMaterial",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Surface",
+        "type": "SHADER",
+        "default_value": null
+      },
+      {
+        "name": "Volume",
+        "type": "SHADER",
+        "default_value": null
+      },
+      {
+        "name": "Displacement",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Thickness",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeOutputWorld",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Surface",
+        "type": "SHADER",
+        "default_value": null
+      },
+      {
+        "name": "Volume",
+        "type": "SHADER",
+        "default_value": null
+      }
+    ],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeParticleInfo",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Index",
+        "type": "VALUE"
+      },
+      {
+        "name": "Random",
+        "type": "VALUE"
+      },
+      {
+        "name": "Age",
+        "type": "VALUE"
+      },
+      {
+        "name": "Lifetime",
+        "type": "VALUE"
+      },
+      {
+        "name": "Location",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Size",
+        "type": "VALUE"
+      },
+      {
+        "name": "Velocity",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Angular Velocity",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodePointInfo",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Position",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Radius",
+        "type": "VALUE"
+      },
+      {
+        "name": "Random",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeRGB",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeRGBCurve",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeRGBToBW",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Val",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeRadialTiling",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Sides",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Roundness",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Segment Coordinates",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Segment ID",
+        "type": "VALUE"
+      },
+      {
+        "name": "Segment Width",
+        "type": "VALUE"
+      },
+      {
+        "name": "Segment Rotation",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeScript",
+    "label": "",
+    "inputs": [],
+    "outputs": []
+  },
+  {
+    "node_type": "ShaderNodeSeparateColor",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Red",
+        "type": "VALUE"
+      },
+      {
+        "name": "Green",
+        "type": "VALUE"
+      },
+      {
+        "name": "Blue",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeSeparateXYZ",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "X",
+        "type": "VALUE"
+      },
+      {
+        "name": "Y",
+        "type": "VALUE"
+      },
+      {
+        "name": "Z",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeShaderToRGB",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Shader",
+        "type": "SHADER",
+        "default_value": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeSqueeze",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Value",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Width",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Center",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeSubsurfaceScattering",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 0.05000000074505806
+      },
+      {
+        "name": "Radius",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ]
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.399999976158142
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BSSRDF",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTangent",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Tangent",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexBrick",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Color1",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Color2",
+        "type": "RGBA",
+        "default_value": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          1.0
+        ]
+      },
+      {
+        "name": "Mortar",
+        "type": "RGBA",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Mortar Size",
+        "type": "VALUE",
+        "default_value": 0.019999999552965164
+      },
+      {
+        "name": "Mortar Smooth",
+        "type": "VALUE",
+        "default_value": 0.10000000149011612
+      },
+      {
+        "name": "Bias",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Brick Width",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Row Height",
+        "type": "VALUE",
+        "default_value": 0.25
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexChecker",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Color1",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Color2",
+        "type": "RGBA",
+        "default_value": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          1.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexCoord",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Generated",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Normal",
+        "type": "VECTOR"
+      },
+      {
+        "name": "UV",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Object",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Camera",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Window",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Reflection",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexEnvironment",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexGabor",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Frequency",
+        "type": "VALUE",
+        "default_value": 2.0
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Orientation",
+        "type": "VALUE",
+        "default_value": 0.7853981852531433
+      },
+      {
+        "name": "Orientation",
+        "type": "VECTOR",
+        "default_value": [
+          1.4142135381698608,
+          1.4142135381698608,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      },
+      {
+        "name": "Phase",
+        "type": "VALUE"
+      },
+      {
+        "name": "Intensity",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexGradient",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexIES",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Strength",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexImage",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexMagic",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Distortion",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexNoise",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "W",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Detail",
+        "type": "VALUE",
+        "default_value": 2.0
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Lacunarity",
+        "type": "VALUE",
+        "default_value": 2.0
+      },
+      {
+        "name": "Offset",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Gain",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Distortion",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      },
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexSky",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexVoronoi",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "W",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Detail",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Lacunarity",
+        "type": "VALUE",
+        "default_value": 2.0
+      },
+      {
+        "name": "Smoothness",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Exponent",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Randomness",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Distance",
+        "type": "VALUE"
+      },
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Position",
+        "type": "VECTOR"
+      },
+      {
+        "name": "W",
+        "type": "VALUE"
+      },
+      {
+        "name": "Radius",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexWave",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 5.0
+      },
+      {
+        "name": "Distortion",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Detail",
+        "type": "VALUE",
+        "default_value": 2.0
+      },
+      {
+        "name": "Detail Scale",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Detail Roughness",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Phase Offset",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeTexWhiteNoise",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "W",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      },
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeUVAlongStroke",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "UV",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeUVMap",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "UV",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeValToRGB",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 0.5
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeValue",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Value",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVectorCurve",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVectorDisplacement",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Midlevel",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 0.009999999776482582
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Displacement",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVectorMath",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Scale",
+        "type": "VALUE",
+        "default_value": 1.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Value",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVectorRotate",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Center",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "Axis",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Angle",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Rotation",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVectorTransform",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Vector",
+        "type": "VECTOR"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVertexColor",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVolumeAbsorption",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Density",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Volume",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVolumeCoefficients",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Absorption Coefficients",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Scatter Coefficients",
+        "type": "VECTOR",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.3300000429153442
+      },
+      {
+        "name": "Backscatter",
+        "type": "VALUE",
+        "default_value": 0.10000000149011612
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Diameter",
+        "type": "VALUE",
+        "default_value": 20.0
+      },
+      {
+        "name": "Emission Coefficients",
+        "type": "VECTOR",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Volume",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVolumeInfo",
+    "label": "",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      },
+      {
+        "name": "Density",
+        "type": "VALUE"
+      },
+      {
+        "name": "Flame",
+        "type": "VALUE"
+      },
+      {
+        "name": "Temperature",
+        "type": "VALUE"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVolumePrincipled",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.5,
+          0.5,
+          0.5,
+          1.0
+        ]
+      },
+      {
+        "name": "Color Attribute",
+        "type": "STRING",
+        "default_value": ""
+      },
+      {
+        "name": "Density",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Density Attribute",
+        "type": "STRING",
+        "default_value": "density"
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Absorption Color",
+        "type": "RGBA",
+        "default_value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Emission Strength",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Emission Color",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Blackbody Intensity",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "Blackbody Tint",
+        "type": "RGBA",
+        "default_value": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "name": "Temperature",
+        "type": "VALUE",
+        "default_value": 1000.0
+      },
+      {
+        "name": "Temperature Attribute",
+        "type": "STRING",
+        "default_value": "temperature"
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Volume",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeVolumeScatter",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Color",
+        "type": "RGBA",
+        "default_value": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ]
+      },
+      {
+        "name": "Density",
+        "type": "VALUE",
+        "default_value": 1.0
+      },
+      {
+        "name": "Anisotropy",
+        "type": "VALUE",
+        "default_value": 0.0
+      },
+      {
+        "name": "IOR",
+        "type": "VALUE",
+        "default_value": 1.3300000429153442
+      },
+      {
+        "name": "Backscatter",
+        "type": "VALUE",
+        "default_value": 0.10000000149011612
+      },
+      {
+        "name": "Alpha",
+        "type": "VALUE",
+        "default_value": 0.5
+      },
+      {
+        "name": "Diameter",
+        "type": "VALUE",
+        "default_value": 20.0
+      },
+      {
+        "name": "Weight",
+        "type": "VALUE",
+        "default_value": 0.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Volume",
+        "type": "SHADER"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeWavelength",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Wavelength",
+        "type": "VALUE",
+        "default_value": 500.0
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Color",
+        "type": "RGBA"
+      }
+    ]
+  },
+  {
+    "node_type": "ShaderNodeWireframe",
+    "label": "",
+    "inputs": [
+      {
+        "name": "Size",
+        "type": "VALUE",
+        "default_value": 0.009999999776482582
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Factor",
+        "type": "VALUE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "物理材质参数数据库 - 包含金属、非金属、液体等材质的IOR、颜色、金属度等属性",
+    "last_updated": "2026-03-06"
+  },
+  "materials": {
+    "metals": {
+      "category_name": "金属 (Metals)",
+      "description": "常见金属材质的物理参数",
+      "items": {
+        "iron": {
+          "name": "铁 (Iron)",
+          "metallic": 1.0,
+          "ior": 2.91,
+          "base_color": [0.56, 0.57, 0.58, 1.0],
+          "roughness": 0.3,
+          "description": "深灰色金属，常见工业材料"
+        },
+        "steel": {
+          "name": "钢 (Steel)",
+          "metallic": 1.0,
+          "ior": 2.4,
+          "base_color": [0.63, 0.63, 0.65, 1.0],
+          "roughness": 0.2,
+          "description": "浅灰色金属，耐用且常见"
+        },
+        "aluminum": {
+          "name": "铝 (Aluminum)",
+          "metallic": 1.0,
+          "ior": 1.44,
+          "base_color": [0.91, 0.92, 0.92, 1.0],
+          "roughness": 0.15,
+          "description": "高反射率的银白色金属"
+        },
+        "copper": {
+          "name": "铜 (Copper)",
+          "metallic": 1.0,
+          "ior": 0.25,
+          "base_color": [0.95, 0.64, 0.54, 1.0],
+          "roughness": 0.25,
+          "description": "红铜色，具有导电、导热的特性"
+        },
+        "brass": {
+          "name": "黄铜 (Brass)",
+          "metallic": 1.0,
+          "ior": 0.4,
+          "base_color": [0.98, 0.83, 0.57, 1.0],
+          "roughness": 0.3,
+          "description": "金黄色的铜-锌合金"
+        },
+        "gold": {
+          "name": "黄金 (Gold)",
+          "metallic": 1.0,
+          "ior": 0.47,
+          "base_color": [1.0, 0.76, 0.33, 1.0],
+          "roughness": 0.1,
+          "description": "贵金属，高价值的黄色金属"
+        },
+        "silver": {
+          "name": "白银 (Silver)",
+          "metallic": 1.0,
+          "ior": 0.15,
+          "base_color": [0.97, 0.98, 0.99, 1.0],
+          "roughness": 0.08,
+          "description": "最高反射率的白色金属"
+        },
+        "lead": {
+          "name": "铅 (Lead)",
+          "metallic": 1.0,
+          "ior": 2.0,
+          "base_color": [0.42, 0.43, 0.45, 1.0],
+          "roughness": 0.35,
+          "description": "柔软的深灰色金属"
+        },
+        "titanium": {
+          "name": "钛 (Titanium)",
+          "metallic": 1.0,
+          "ior": 2.3,
+          "base_color": [0.68, 0.65, 0.63, 1.0],
+          "roughness": 0.22,
+          "description": "轻质强硬的银灰色金属"
+        }
+      }
+    },
+    "dielectrics": {
+      "category_name": "电介质 / 非金属 (Dielectrics)",
+      "description": "不导电的非金属材质",
+      "items": {
+        "glass": {
+          "name": "玻璃 (Glass)",
+          "metallic": 0.0,
+          "ior": 1.5,
+          "base_color": [1.0, 1.0, 1.0, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "透明玻璃，常见的窗户材料"
+        },
+        "diamond": {
+          "name": "钻石 (Diamond)",
+          "metallic": 0.0,
+          "ior": 2.42,
+          "base_color": [1.0, 1.0, 1.0, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "最硬的天然矿物，高折射率"
+        },
+        "ice": {
+          "name": "冰 (Ice)",
+          "metallic": 0.0,
+          "ior": 1.31,
+          "base_color": [0.9, 0.95, 1.0, 1.0],
+          "transmission": 0.8,
+          "roughness": 0.05,
+          "description": "冻结的水，半透明"
+        },
+        "quartz": {
+          "name": "石英 (Quartz)",
+          "metallic": 0.0,
+          "ior": 1.54,
+          "base_color": [1.0, 1.0, 1.0, 1.0],
+          "transmission": 0.9,
+          "roughness": 0.02,
+          "description": "透明矿物晶体"
+        },
+        "sapphire": {
+          "name": "蓝宝石 (Sapphire)",
+          "metallic": 0.0,
+          "ior": 1.77,
+          "base_color": [0.8, 0.9, 1.0, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "蓝色宝石，高折射率"
+        },
+        "ruby": {
+          "name": "红宝石 (Ruby)",
+          "metallic": 0.0,
+          "ior": 1.76,
+          "base_color": [0.9, 0.2, 0.2, 1.0],
+          "transmission": 0.8,
+          "roughness": 0.0,
+          "description": "红色宝石，贵重宝石"
+        },
+        "emerald": {
+          "name": "祖母绿 (Emerald)",
+          "metallic": 0.0,
+          "ior": 1.58,
+          "base_color": [0.2, 0.8, 0.3, 1.0],
+          "transmission": 0.9,
+          "roughness": 0.0,
+          "description": "绿色宝石，贵重宝石"
+        }
+      }
+    },
+    "liquids": {
+      "category_name": "液体 (Liquids)",
+      "description": "常见液体材质的光学性质",
+      "items": {
+        "water": {
+          "name": "水 (Water)",
+          "metallic": 0.0,
+          "ior": 1.33,
+          "base_color": [0.8, 0.9, 1.0, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "清水，半透明蓝色"
+        },
+        "oil": {
+          "name": "油 (Oil)",
+          "metallic": 0.0,
+          "ior": 1.47,
+          "base_color": [0.95, 0.92, 0.85, 1.0],
+          "transmission": 0.8,
+          "roughness": 0.05,
+          "description": "油脂液体，微黄色"
+        },
+        "milk": {
+          "name": "牛奶 (Milk)",
+          "metallic": 0.0,
+          "ior": 1.35,
+          "base_color": [1.0, 0.98, 0.95, 1.0],
+          "subsurface": 0.1,
+          "transmission": 0.2,
+          "description": "乳白色液体，具有半透明性"
+        },
+        "beer": {
+          "name": "啤酒 (Beer)",
+          "metallic": 0.0,
+          "ior": 1.35,
+          "base_color": [0.85, 0.65, 0.25, 1.0],
+          "transmission": 0.6,
+          "roughness": 0.0,
+          "description": "棕黄色液体，半透明"
+        }
+      }
+    },
+    "solids": {
+      "category_name": "常见非金属固体 (Common Solids)",
+      "description": "日常生活中常见的非金属材料",
+      "items": {
+        "wood": {
+          "name": "木头 (Wood)",
+          "metallic": 0.0,
+          "ior": 1.5,
+          "base_color": [0.6, 0.4, 0.25, 1.0],
+          "roughness": 0.5,
+          "description": "棕色木质材料，具有纹理感"
+        },
+        "concrete": {
+          "name": "混凝土 (Concrete)",
+          "metallic": 0.0,
+          "ior": 1.8,
+          "base_color": [0.55, 0.55, 0.55, 1.0],
+          "roughness": 0.8,
+          "description": "灰色建筑材料，粗糙表面"
+        },
+        "brick": {
+          "name": "砖块 (Brick)",
+          "metallic": 0.0,
+          "ior": 1.8,
+          "base_color": [0.65, 0.35, 0.25, 1.0],
+          "roughness": 0.7,
+          "description": "红棕色砌体材料"
+        },
+        "plastic": {
+          "name": "塑料 (Plastic)",
+          "metallic": 0.0,
+          "ior": 1.49,
+          "base_color": [0.9, 0.9, 0.9, 1.0],
+          "roughness": 0.4,
+          "description": "合成高分子材料，光泽感"
+        },
+        "rubber": {
+          "name": "橡胶 (Rubber)",
+          "metallic": 0.0,
+          "ior": 1.52,
+          "base_color": [0.1, 0.1, 0.1, 1.0],
+          "roughness": 0.6,
+          "description": "黑色弹性材料"
+        },
+        "paper": {
+          "name": "纸张 (Paper)",
+          "metallic": 0.0,
+          "ior": 1.5,
+          "base_color": [0.95, 0.95, 0.95, 1.0],
+          "roughness": 0.8,
+          "description": "白色纤维素材料，吸光"
+        },
+        "skin": {
+          "name": "皮肤 (Skin)",
+          "metallic": 0.0,
+          "ior": 1.4,
+          "base_color": [0.9, 0.65, 0.55, 1.0],
+          "subsurface": 0.2,
+          "subsurface_radius": [1.0, 0.6, 0.4],
+          "roughness": 0.3,
+          "description": "人类皮肤，具有次表面散射特性"
+        }
+      }
+    },
+    "special_effects": {
+      "category_name": "特殊效果材质 (Special Effects)",
+      "description": "具有特殊光学效果的材质",
+      "items": {
+        "gem_red": {
+          "name": "红宝石 (Red Gem)",
+          "metallic": 0.0,
+          "ior": 2.0,
+          "base_color": [0.9, 0.2, 0.2, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "发光红色宝石"
+        },
+        "gem_blue": {
+          "name": "蓝宝石 (Blue Gem)",
+          "metallic": 0.0,
+          "ior": 2.0,
+          "base_color": [0.2, 0.4, 0.9, 1.0],
+          "transmission": 1.0,
+          "roughness": 0.0,
+          "description": "发光蓝色宝石"
+        },
+        "obsidian": {
+          "name": "黑曜石 (Obsidian)",
+          "metallic": 0.0,
+          "ior": 1.6,
+          "base_color": [0.05, 0.05, 0.07, 1.0],
+          "roughness": 0.1,
+          "description": "极黑色火山玻璃，高反射"
+        },
+        "marble": {
+          "name": "大理石 (Marble)",
+          "metallic": 0.0,
+          "ior": 1.5,
+          "base_color": [0.95, 0.93, 0.9, 1.0],
+          "roughness": 0.3,
+          "description": "白色或淡色纹理石材"
+        },
+        "snow": {
+          "name": "雪 (Snow)",
+          "metallic": 0.0,
+          "ior": 1.31,
+          "base_color": [0.95, 0.97, 1.0, 1.0],
+          "roughness": 0.9,
+          "subsurface": 0.15,
+          "description": "白色粉末状材料，强漫反射"
+        }
+      }
+    },
+    "natural_elements": {
+      "category_name": "自然元素 (Natural Elements)",
+      "description": "植物和地质材料",
+      "items": {
+        "leaf": {
+          "name": "叶子 (Leaf)",
+          "metallic": 0.0,
+          "ior": 1.4,
+          "base_color": [0.2, 0.6, 0.2, 1.0],
+          "subsurface": 0.1,
+          "roughness": 0.4,
+          "description": "绿色植物叶片，半透明"
+        },
+        "grass": {
+          "name": "草 (Grass)",
+          "metallic": 0.0,
+          "ior": 1.4,
+          "base_color": [0.3, 0.7, 0.3, 1.0],
+          "roughness": 0.6,
+          "description": "绿色草地材料"
+        },
+        "sand": {
+          "name": "沙 (Sand)",
+          "metallic": 0.0,
+          "ior": 1.5,
+          "base_color": [0.85, 0.8, 0.6, 1.0],
+          "roughness": 0.85,
+          "description": "黄色颗粒物，强漫反射"
+        },
+        "clay": {
+          "name": "陶土 (Clay)",
+          "metallic": 0.0,
+          "ior": 1.6,
+          "base_color": [0.7, 0.45, 0.35, 1.0],
+          "roughness": 0.7,
+          "description": "棕红色泥土材料"
+        }
+      }
+    }
+  }
+}
